@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home" android:title="Home" android:checked="true" />
+        <item android:title="Guide">
+            <menu>
+                <item android:id="@+id/help" android:title="@string/help" />
+                <item android:id="@+id/manage" android:title="Manage Apps" />
+                <item android:id="@+id/restart" android:title="Restart Service" />
+            </menu>
+        </item>
+        <item android:title="Communicate">
+            <menu>
+                <item android:id="@+id/rate" android:title="@string/menu_rate" />
+                <item android:id="@+id/share" android:title="@string/menu_share" />
+                <item android:id="@+id/contact" android:title="@string/contact" />
+            </menu>
+        </item>
+    </group>
+</menu>

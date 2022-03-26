@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="80.0dip"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginEnd="4.0dip"
+        android:layout_marginStart="4.0dip"
+        android:layout_marginTop="2.0dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:layout_marginStart="12.0dip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/correct" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8.0dip"
+            android:layout_weight="1.0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_marginEnd="12.0dip"
+            app:srcCompat="@drawable/correct" />
+    </LinearLayout>
+</LinearLayout>

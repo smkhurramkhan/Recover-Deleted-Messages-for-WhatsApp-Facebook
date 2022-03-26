@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Recover Deleted Messages</string>
+    <string name="add">Update Apps</string>
+    <string name="contact">Contact</string>
+    <string name="email">example@gmail.com</string>
+    <string name="empty_message">No chats available</string>
+    <string name="only_empty_text">No images available</string>
+    <string name="files">files</string>
+    <string name="help">Tutorial</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_rate">Rate</string>
+    <string name="message_deleted">Deleted Message Found</string>
+    <string name="message_was_deleted">Tap to check deleted message now.</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="noti_obserb">notionserving</string>
+    <string name="refresh_files">refresh_files</string>
+    <string name="remove_permission_framgent">remove_permission_fragment</string>
+    <string name="select_app">Select Apps to Monitor</string>
+    <string name="share">Hey check out this amazing app at:</string>
+    <string name="thismsgwasdeleted">This message was deleted</string>
+    <string name="unread">UNREAD</string>
+
+    <string name="format_request_permision">%1$s will need to have read/write permission your sdcard to save Files.Do you want to grant it?</string>
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <string name="we_need_manage_storage_permission" translatable="false">This app requires manage device storage permission to work properly on Android 10 onwards devices, Please grant the permission.If you don\'t allow this you will not able to save deleted images.</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginTop="8.0dip"
+        app:srcCompat="@drawable/user"
+        android:visibility="gone"/>
+
+    <test.recovermessages.utils.RobotoRegular
+        android:id="@+id/name"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="20.0dip"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/time"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <test.recovermessages.utils.RobotoRegular
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4.0dip"
+        android:layout_marginTop="4.0dip"
+        android:textSize="10.0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <test.recovermessages.utils.RobotoLight
+        android:id="@+id/msg"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="4.0dip"
+        android:singleLine="true"
+        app:layout_constraintEnd_toStartOf="@+id/unread"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0.0dip"
+        android:layout_height="1.0dip"
+        android:background="?android:listDivider"
+        android:layout_marginTop="10.0dip"
+        app:layout_constraintTop_toBottomOf="@+id/msg"/>
+
+    <TextView
+        android:id="@+id/unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginEnd="8.0dip"
+        android:background="@drawable/unread"
+        android:padding="4.0dip"
+        android:text="@string/unread"
+        android:textColor="@color/white"
+        android:textSize="10.0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
